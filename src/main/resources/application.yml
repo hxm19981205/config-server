@@ -1,0 +1,16 @@
+server:
+  port: 8767
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hxm19981205/config-server.git
+          username: hxm19981205
+          password: 2456392ggi2510
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
